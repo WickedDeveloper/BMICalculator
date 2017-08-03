@@ -77,10 +77,11 @@
             // 
             this.MetricRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.MetricRadioButton.AutoSize = true;
-            this.MetricRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MetricRadioButton.Location = new System.Drawing.Point(175, 3);
+            this.MetricRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MetricRadioButton.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.MetricRadioButton.Location = new System.Drawing.Point(172, 3);
             this.MetricRadioButton.Name = "MetricRadioButton";
-            this.MetricRadioButton.Size = new System.Drawing.Size(70, 30);
+            this.MetricRadioButton.Size = new System.Drawing.Size(76, 30);
             this.MetricRadioButton.TabIndex = 1;
             this.MetricRadioButton.TabStop = true;
             this.MetricRadioButton.Text = "Metric";
@@ -90,10 +91,11 @@
             // 
             this.ImperialRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ImperialRadioButton.AutoSize = true;
-            this.ImperialRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImperialRadioButton.Location = new System.Drawing.Point(28, 3);
+            this.ImperialRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImperialRadioButton.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.ImperialRadioButton.Location = new System.Drawing.Point(24, 3);
             this.ImperialRadioButton.Name = "ImperialRadioButton";
-            this.ImperialRadioButton.Size = new System.Drawing.Size(83, 30);
+            this.ImperialRadioButton.Size = new System.Drawing.Size(91, 30);
             this.ImperialRadioButton.TabIndex = 0;
             this.ImperialRadioButton.TabStop = true;
             this.ImperialRadioButton.Text = "Imperial";
@@ -105,7 +107,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MyHeightLabel.AutoSize = true;
-            this.MyHeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyHeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyHeightLabel.ForeColor = System.Drawing.Color.DodgerBlue;
             this.MyHeightLabel.Location = new System.Drawing.Point(3, 36);
             this.MyHeightLabel.Name = "MyHeightLabel";
             this.MyHeightLabel.Size = new System.Drawing.Size(134, 36);
@@ -118,7 +121,9 @@
             this.MyHeightTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.MyHeightTextBox.BackColor = System.Drawing.Color.White;
             this.MyHeightTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyHeightTextBox.ForeColor = System.Drawing.Color.Black;
             this.MyHeightTextBox.Location = new System.Drawing.Point(143, 39);
             this.MyHeightTextBox.Name = "MyHeightTextBox";
             this.MyHeightTextBox.Size = new System.Drawing.Size(134, 26);
@@ -131,7 +136,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MyWeight.AutoSize = true;
-            this.MyWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyWeight.ForeColor = System.Drawing.Color.DodgerBlue;
             this.MyWeight.Location = new System.Drawing.Point(3, 72);
             this.MyWeight.Name = "MyWeight";
             this.MyWeight.Size = new System.Drawing.Size(134, 36);
@@ -144,7 +150,9 @@
             this.MyWeightTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.MyWeightTextBox.BackColor = System.Drawing.Color.White;
             this.MyWeightTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyWeightTextBox.ForeColor = System.Drawing.Color.Black;
             this.MyWeightTextBox.Location = new System.Drawing.Point(143, 75);
             this.MyWeightTextBox.Name = "MyWeightTextBox";
             this.MyWeightTextBox.Size = new System.Drawing.Size(134, 26);
@@ -153,8 +161,11 @@
             // 
             // BMIDisplayTextBox
             // 
+            this.BMIDisplayTextBox.BackColor = System.Drawing.Color.Gold;
+            this.BMIDisplayTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel1.SetColumnSpan(this.BMIDisplayTextBox, 2);
             this.BMIDisplayTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMIDisplayTextBox.ForeColor = System.Drawing.Color.Black;
             this.BMIDisplayTextBox.Location = new System.Drawing.Point(3, 179);
             this.BMIDisplayTextBox.Name = "BMIDisplayTextBox";
             this.BMIDisplayTextBox.ReadOnly = true;
@@ -167,19 +178,24 @@
             this.CalculateBMIButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.CalculateBMIButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.tableLayoutPanel1.SetColumnSpan(this.CalculateBMIButton, 2);
-            this.CalculateBMIButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalculateBMIButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalculateBMIButton.ForeColor = System.Drawing.Color.White;
             this.CalculateBMIButton.Location = new System.Drawing.Point(3, 111);
             this.CalculateBMIButton.Name = "CalculateBMIButton";
             this.CalculateBMIButton.Size = new System.Drawing.Size(274, 62);
             this.CalculateBMIButton.TabIndex = 7;
-            this.CalculateBMIButton.Text = "Calculate BMI";
-            this.CalculateBMIButton.UseVisualStyleBackColor = true;
+            this.CalculateBMIButton.Text = "CALCULATE BMI";
+            this.CalculateBMIButton.UseVisualStyleBackColor = false;
             // 
             // BMIResultsTextBox
             // 
+            this.BMIResultsTextBox.BackColor = System.Drawing.Color.LightGray;
+            this.BMIResultsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel1.SetColumnSpan(this.BMIResultsTextBox, 2);
             this.BMIResultsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMIResultsTextBox.ForeColor = System.Drawing.Color.Black;
             this.BMIResultsTextBox.Location = new System.Drawing.Point(3, 269);
             this.BMIResultsTextBox.Multiline = true;
             this.BMIResultsTextBox.Name = "BMIResultsTextBox";
@@ -197,19 +213,24 @@
             // 
             // ResetButton
             // 
-            this.ResetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.ResetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ResetButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.tableLayoutPanel1.SetColumnSpan(this.ResetButton, 2);
-            this.ResetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetButton.ForeColor = System.Drawing.Color.White;
             this.ResetButton.Location = new System.Drawing.Point(3, 382);
             this.ResetButton.Name = "ResetButton";
             this.ResetButton.Size = new System.Drawing.Size(274, 33);
             this.ResetButton.TabIndex = 10;
-            this.ResetButton.Text = "Reset";
-            this.ResetButton.UseVisualStyleBackColor = true;
+            this.ResetButton.Text = "RESET";
+            this.ResetButton.UseVisualStyleBackColor = false;
             // 
             // BMICalculatorForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(304, 442);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
