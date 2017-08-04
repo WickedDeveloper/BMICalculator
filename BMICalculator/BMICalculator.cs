@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 /* Name: David Gwyn
  * Student #: 821304912
- * Date: August 3rd, 2017
+ * Date: August 4th, 2017
  * Description: BMI Calculator application
- * Version: 0.1 - Created the initial Project and modified properties of the BMICalculatorForm
+ * Version: 0.2 - Created the BMIResetButton_Click method.
 */
 
 namespace BMICalculator
@@ -22,6 +22,20 @@ namespace BMICalculator
         public BMICalculatorForm()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Resets all BMICalculatorForm controls back to defaults from initial form load.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BMIFormResetButton_Click(object sender, EventArgs e)
+        {
+            ImperialRadioButton.Checked = true;
+            MyHeightTextBox.Text = "";
+            MyWeightTextBox.Text = "";
+            BMIDisplayTextBox.Text = "";
+            BMIResultsTextBox.Text = "";
         }
     }
 }

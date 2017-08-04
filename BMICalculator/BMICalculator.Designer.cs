@@ -228,6 +228,7 @@
             this.BMIFormResetButton.TabIndex = 3;
             this.BMIFormResetButton.Text = "RESET";
             this.BMIFormResetButton.UseVisualStyleBackColor = false;
+            this.BMIFormResetButton.Click += new System.EventHandler(this.BMIFormResetButton_Click);
             // 
             // BMICalculatorForm
             // 
