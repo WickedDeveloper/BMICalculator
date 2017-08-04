@@ -157,6 +157,7 @@
             // 
             this.ImperialRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ImperialRadioButton.AutoSize = true;
+            this.ImperialRadioButton.Checked = true;
             this.ImperialRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImperialRadioButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.ImperialRadioButton.Location = new System.Drawing.Point(24, 3);
