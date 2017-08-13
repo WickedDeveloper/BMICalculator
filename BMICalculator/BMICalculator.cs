@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 0.7 - Updated CalculateResults Method.
+ * Version: 0.8 - Refactored the BMIDisplay method to correct logical error.
 */
 
 namespace BMICalculator
@@ -128,24 +128,24 @@ namespace BMICalculator
         {
             if (BMIResult > 30)
 
-                BMIDisplayTextBox.Text = Convert.ToString(BMIResult);
+                BMIDisplayTextBox.Text = BMIResult.ToString("0.0");
                 BMIResultsTextBox.Text = "Obese, as your BMI Scale is 30 or greater!";
 
             if (BMIResult > 25 && BMIResult <= 29.9)
             {
-                BMIDisplayTextBox.Text = Convert.ToString(BMIResult);
+                BMIDisplayTextBox.Text = BMIResult.ToString("0.0");
                 BMIResultsTextBox.Text = "Overweight, as your BMI Scale is between 25 and 29.9!";
             }
 
             if (BMIResult > 18.5 && BMIResult <= 24.9)
             {
-                BMIDisplayTextBox.Text = Convert.ToString(BMIResult);
+                BMIDisplayTextBox.Text = BMIResult.ToString("0.0");
                 BMIResultsTextBox.Text = "Normal, as your BMI Scale is between 18.5 and 24.9!";
             }
 
-            if (BMIResult > 18.5)
+            if (BMIResult < 18.5)
             {
-                BMIDisplayTextBox.Text = Convert.ToString(BMIResult);
+                BMIDisplayTextBox.Text = BMIResult.ToString("0.0");
                 BMIResultsTextBox.Text = "Underweight, as your BMI Scale is less than 18.5!";
             }
         }
