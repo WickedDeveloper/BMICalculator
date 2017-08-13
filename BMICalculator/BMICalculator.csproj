@@ -52,6 +52,12 @@
     <Compile Include="BMICalculator.Designer.cs">
       <DependentUpon>BMICalculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="BMISplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMISplashForm.Designer.cs">
+      <DependentUpon>BMISplashForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BMICalculator.resx">
