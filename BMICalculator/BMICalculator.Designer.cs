@@ -79,7 +79,7 @@
             this.BMIResultsTextBox.BackColor = System.Drawing.Color.LightGray;
             this.BMIResultsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.BMIResultsTextBox, 2);
-            this.BMIResultsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMIResultsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BMIResultsTextBox.ForeColor = System.Drawing.Color.Black;
             this.BMIResultsTextBox.Location = new System.Drawing.Point(3, 267);
             this.BMIResultsTextBox.Multiline = true;
@@ -87,6 +87,7 @@
             this.BMIResultsTextBox.ReadOnly = true;
             this.BMIResultsTextBox.Size = new System.Drawing.Size(274, 99);
             this.BMIResultsTextBox.TabIndex = 100;
+            this.BMIResultsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BMIProgressBar
             // 
