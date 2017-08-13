@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 /* Name: David Gwyn
  * Student #: 821304912
- * Date: August 43th, 2017
+ * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 0.2 - Refactored the BMIResetButton_Click method to reset the BMIProgressBar.
+ * Version: 0.3 - Refactored the BMIResetButton_Click method to reset text boxes using the clear method.
 */
 
 namespace BMICalculator
@@ -32,11 +32,11 @@ namespace BMICalculator
         private void BMIFormResetButton_Click(object sender, EventArgs e)
         {
             ImperialRadioButton.Checked = true;
-            MyHeightTextBox.Text = "";
-            MyWeightTextBox.Text = "";
-            BMIDisplayTextBox.Text = "";
+            MyHeightTextBox.Clear();
+            MyWeightTextBox.Clear();
+            BMIDisplayTextBox.Clear();
             BMIProgressBar.Value = 0;
-            BMIResultsTextBox.Text = "";
+            BMIResultsTextBox.Clear();
         }
     }
 }
