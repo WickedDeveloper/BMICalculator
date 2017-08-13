@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 1.0 - Refactored the DisplayBMI Method to update BMIProgress Bar when it displays results.
+ * Version: 1.1 - Cleaned up code comments and spacing.
 */
 
 namespace BMICalculator
@@ -69,12 +69,12 @@ namespace BMICalculator
 
         // CONSTRUCTORS
 
-        // PUBLIC METHODS
-
         public BMICalculatorForm()
         {
             InitializeComponent();
         }
+
+        // PUBLIC METHODS
 
         // PRIVATE METHODS
 
