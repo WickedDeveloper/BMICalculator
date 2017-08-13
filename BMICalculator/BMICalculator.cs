@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 0.4 - Added public instance variables and public properties for the BMI Calculator Class.
+ * Version: 0.5 - Added validation for MyHeightTextBox and MyWeightTextBox so only numeric values are accepted.
 */
 
 namespace BMICalculator
@@ -91,6 +91,48 @@ namespace BMICalculator
             BMIDisplayTextBox.Clear();
             BMIProgressBar.Value = 0;
             BMIResultsTextBox.Clear();
+        }
+
+        private void CalculateBMIButton_Click(object sender, EventArgs e)
+        {
+            
+            //CalculateBMI(MyHeightTextBox.Text, MyWeightTextBox);
+        }
+
+        private void CalculateBMI (double height, double weight)
+        {
+            this.Height = height;
+            this.Weight = weight;
+        }
+
+        /// <summary>
+        /// Validates MyHeightTextBox so only numeric inputs are accepted.  Also allows backspace and delete key to be used.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MyHeightTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char inputValue = e.KeyChar;
+
+            if (!Char.IsDigit(inputValue) && inputValue != 8 && inputValue != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Validates MyHeightTextBox so only numeric inputs are accepted.  Also allows backspace and delete key to be used.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MyWeightTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char inputValue = e.KeyChar;
+
+            if (!Char.IsDigit(inputValue) && inputValue != 8 && inputValue != 46)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

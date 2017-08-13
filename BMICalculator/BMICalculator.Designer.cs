@@ -123,6 +123,7 @@
             this.MyHeightTextBox.Size = new System.Drawing.Size(134, 26);
             this.MyHeightTextBox.TabIndex = 0;
             this.MyHeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MyHeightTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MyHeightTextBox_KeyPress);
             // 
             // MyWeightLabel
             // 
@@ -152,6 +153,7 @@
             this.MyWeightTextBox.Size = new System.Drawing.Size(134, 26);
             this.MyWeightTextBox.TabIndex = 1;
             this.MyWeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MyWeightTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MyWeightTextBox_KeyPress);
             // 
             // ImperialRadioButton
             // 
@@ -198,6 +200,7 @@
             this.CalculateBMIButton.TabIndex = 2;
             this.CalculateBMIButton.Text = "CALCULATE BMI";
             this.CalculateBMIButton.UseVisualStyleBackColor = false;
+            this.CalculateBMIButton.Click += new System.EventHandler(this.CalculateBMIButton_Click);
             // 
             // BMIDisplayTextBox
             // 
