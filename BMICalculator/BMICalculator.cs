@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 0.5 - Added validation for MyHeightTextBox and MyWeightTextBox so only numeric values are accepted.
+ * Version: 0.6 - Updated CalculateBMI Method.
 */
 
 namespace BMICalculator
@@ -62,7 +62,7 @@ namespace BMICalculator
 
             set
             {
-                this._bmiResult = this._weight * this._height;
+                this._bmiResult = value;
             }
         }
 
@@ -95,14 +95,30 @@ namespace BMICalculator
 
         private void CalculateBMIButton_Click(object sender, EventArgs e)
         {
-            
-            //CalculateBMI(MyHeightTextBox.Text, MyWeightTextBox);
+           
+            CalculateBMI();
+            DisplayBMI();
         }
 
-        private void CalculateBMI (double height, double weight)
+        /// <summary>
+        /// Calculates BMI based on inputs from user for Height and Weight and whether Imperial or Metric radio button is selected.
+        /// </summary>
+        private void CalculateBMI ()
         {
+            double height = Convert.ToDouble(MyHeightTextBox);
+            double weight = Convert.ToDouble(MyWeightTextBox);
             this.Height = height;
             this.Weight = weight;
+
+            if(MetricRadioButton.Checked)
+            {
+                BmiResult = ((Weight * 703) / (Height * Height));
+            }
+
+            if(ImperialRadioButton.Checked)
+            {
+                BmiResult = ((Weight) / (Height) * Height);
+            }
         }
 
         /// <summary>
