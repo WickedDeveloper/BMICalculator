@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BMICalculator.cs">
+    <Compile Include="BMICalculatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BMICalculator.Designer.cs">
-      <DependentUpon>BMICalculator.cs</DependentUpon>
+    <Compile Include="BMICalculatorForm.Designer.cs">
+      <DependentUpon>BMICalculatorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BMISplashForm.cs">
       <SubType>Form</SubType>
@@ -60,8 +60,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BMICalculator.resx">
-      <DependentUpon>BMICalculator.cs</DependentUpon>
+    <EmbeddedResource Include="BMICalculatorForm.resx">
+      <DependentUpon>BMICalculatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMISplashForm.resx">
+      <DependentUpon>BMISplashForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
