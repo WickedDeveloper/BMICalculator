@@ -6,9 +6,9 @@ using System.Windows.Forms;
 
 /* Name: David Gwyn
  * Student #: 821304912
- * Date: August 3rd, 2017
+ * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 0.1 - Created the initial Project and modified properties of the BMICalculatorForm
+ * Version: 0.2 - Completed testing of BMI Calculator.
 */
 
 namespace BMICalculator
