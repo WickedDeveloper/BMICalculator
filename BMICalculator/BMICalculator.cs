@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 0.6 - Updated CalculateBMI Method.
+ * Version: 0.7 - Updated CalculateResults Method.
 */
 
 namespace BMICalculator
@@ -53,7 +53,7 @@ namespace BMICalculator
             }
         }
 
-        public double BmiResult
+        public double BMIResult
         {
             get
             {
@@ -105,19 +105,48 @@ namespace BMICalculator
         /// </summary>
         private void CalculateBMI ()
         {
-            double height = Convert.ToDouble(MyHeightTextBox);
-            double weight = Convert.ToDouble(MyWeightTextBox);
+            double height = Convert.ToDouble(MyHeightTextBox.Text);
+            double weight = Convert.ToDouble(MyWeightTextBox.Text);
             this.Height = height;
             this.Weight = weight;
 
             if(MetricRadioButton.Checked)
             {
-                BmiResult = ((Weight * 703) / (Height * Height));
+                BMIResult = ((Weight * 703) / (Height * Height));
             }
 
             if(ImperialRadioButton.Checked)
             {
-                BmiResult = ((Weight) / (Height) * Height);
+                BMIResult = ((Weight) / (Height) * Height);
+            }
+        }
+
+        /// <summary>
+        /// Displays BMI results based on BMIResult and changes color of the progress bar.
+        /// </summary>
+        private void DisplayBMI ()
+        {
+            if (BMIResult > 30)
+
+                BMIDisplayTextBox.Text = Convert.ToString(BMIResult);
+                BMIResultsTextBox.Text = "Obese, as your BMI Scale is 30 or greater!";
+
+            if (BMIResult > 25 && BMIResult <= 29.9)
+            {
+                BMIDisplayTextBox.Text = Convert.ToString(BMIResult);
+                BMIResultsTextBox.Text = "Overweight, as your BMI Scale is between 25 and 29.9!";
+            }
+
+            if (BMIResult > 18.5 && BMIResult <= 24.9)
+            {
+                BMIDisplayTextBox.Text = Convert.ToString(BMIResult);
+                BMIResultsTextBox.Text = "Normal, as your BMI Scale is between 18.5 and 24.9!";
+            }
+
+            if (BMIResult > 18.5)
+            {
+                BMIDisplayTextBox.Text = Convert.ToString(BMIResult);
+                BMIResultsTextBox.Text = "Underweight, as your BMI Scale is less than 18.5!";
             }
         }
 
