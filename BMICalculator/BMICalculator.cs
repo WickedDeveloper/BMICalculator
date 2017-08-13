@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 0.8 - Refactored the BMIDisplay method to correct logical error.
+ * Version: 0.9 - Refactored the CalculateBMI Method.
 */
 
 namespace BMICalculator
@@ -110,14 +110,14 @@ namespace BMICalculator
             this.Height = height;
             this.Weight = weight;
 
-            if(MetricRadioButton.Checked)
+            if (ImperialRadioButton.Checked)
             {
                 BMIResult = ((Weight * 703) / (Height * Height));
             }
 
-            if(ImperialRadioButton.Checked)
+            if(MetricRadioButton.Checked)
             {
-                BMIResult = ((Weight) / (Height) * Height);
+                BMIResult = ((Weight) / (Height * Height));
             }
         }
 
