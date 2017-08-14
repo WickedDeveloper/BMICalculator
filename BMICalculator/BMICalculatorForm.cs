@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 1.1 - Cleaned up code comments and spacing.
+ * Version: 1.2 - Refactored click event for BMIFormResetButton, added comments, and finished final testing of application.
 */
 
 namespace BMICalculator
@@ -77,11 +77,19 @@ namespace BMICalculator
         // PRIVATE METHODS
 
         /// <summary>
-        /// Resets all BMICalculatorForm controls back to defaults from initial form load.
+        /// Click event for the BMIFormResetButton which calls the BMICalculatorFormReset method.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void BMIFormResetButton_Click(object sender, EventArgs e)
+        {
+            BMICalculatorFormReset();
+        }
+
+        /// <summary>
+        /// Clears BMICalculatorForm values and resets form to defaults.
+        /// </summary>
+        private void BMICalculatorFormReset()
         {
             ImperialRadioButton.Checked = true;
             MyHeightTextBox.Clear();
@@ -91,17 +99,22 @@ namespace BMICalculator
             BMIResultsTextBox.Clear();
         }
 
+        /// <summary>
+        /// Click event for the CalculateBMIButton which calls the CalculateBMIResults methods and DisplayBMIResults method.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CalculateBMIButton_Click(object sender, EventArgs e)
         {
            
-            CalculateBMI();
-            DisplayBMI();
+            CalculateBMIResults();
+            DisplayBMIResults();
         }
 
         /// <summary>
         /// Calculates BMI based on inputs from user for Height and Weight and whether Imperial or Metric radio button is selected.
         /// </summary>
-        private void CalculateBMI ()
+        private void CalculateBMIResults ()
         {
             double height = Convert.ToDouble(MyHeightTextBox.Text);
             double weight = Convert.ToDouble(MyWeightTextBox.Text);
@@ -122,7 +135,7 @@ namespace BMICalculator
         /// <summary>
         /// Displays BMI results based on BMIResult and changes color of the progress bar.
         /// </summary>
-        private void DisplayBMI ()
+        private void DisplayBMIResults ()
         {
             BMIProgressBar.Minimum = 0;
             BMIProgressBar.Maximum = 100;
@@ -130,28 +143,28 @@ namespace BMICalculator
             if (BMIResult > 30)
             {
                 BMIDisplayTextBox.Text = BMIResult.ToString("0.0");
-                BMIResultsTextBox.Text = "Obese, as your BMI Scale is 30 or greater!";
+                BMIResultsTextBox.Text = "Obese, as your BMI Result is 30 or greater!";
                 BMIProgressBar.Value = 100;
             }  
 
             if (BMIResult > 25 && BMIResult <= 29.9)
             {
                 BMIDisplayTextBox.Text = BMIResult.ToString("0.0");
-                BMIResultsTextBox.Text = "Overweight, as your BMI Scale is between 25 and 29.9!";
+                BMIResultsTextBox.Text = "Overweight, as your BMI Result is between 25 and 29.9!";
                 BMIProgressBar.Value = 75;
             }
 
             if (BMIResult > 18.5 && BMIResult <= 24.9)
             {
                 BMIDisplayTextBox.Text = BMIResult.ToString("0.0");
-                BMIResultsTextBox.Text = "Normal, as your BMI Scale is between 18.5 and 24.9!";
+                BMIResultsTextBox.Text = "Normal, as your BMI Result is between 18.5 and 24.9!";
                 BMIProgressBar.Value = 50;
             }
 
             if (BMIResult < 18.5)
             {
                 BMIDisplayTextBox.Text = BMIResult.ToString("0.0");
-                BMIResultsTextBox.Text = "Underweight, as your BMI Scale is less than 18.5!";
+                BMIResultsTextBox.Text = "Underweight, as your BMI Result is less than 18.5!";
                 BMIProgressBar.Value = 25;
             }
         }
