@@ -8,7 +8,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 0.3 - Instantiate the BMISplashForm.
+ * Version: 0.4 - Instantiate the bMICalculator Form Object and Display Splash Screen on Application Load.
 */
 
 namespace BMICalculator
