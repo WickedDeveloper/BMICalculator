@@ -28,7 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.BMISplashFormTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // BMISplashFormTimer
+            // 
+            this.BMISplashFormTimer.Enabled = true;
+            this.BMISplashFormTimer.Interval = 3000;
+            this.BMISplashFormTimer.Tick += new System.EventHandler(this.BMISplashFormTimer_Tick);
             // 
             // BMISplashForm
             // 
@@ -45,5 +53,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer BMISplashFormTimer;
     }
 }
