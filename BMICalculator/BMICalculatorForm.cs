@@ -74,8 +74,6 @@ namespace BMICalculator
             InitializeComponent();
         }
 
-        // PUBLIC METHODS
-
         // PRIVATE METHODS
 
         /// <summary>
@@ -187,5 +185,17 @@ namespace BMICalculator
                 e.Handled = true;
             }
         }
+
+        /// <summary>
+        /// This event ensures the application closes when the form is closed.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BMICalculatorForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        // PUBLIC METHODS
     }
 }
