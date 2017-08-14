@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator Splash Form
- * Version: 0.3 - Refactored BMICalculatorForm Public Properties.
+ * Version: 0.4 - Finialized BMISplashForm Design, and finished Testing.
 */
 
 namespace BMICalculator
@@ -39,6 +39,11 @@ namespace BMICalculator
 
         // PRIVATE METHODS
 
+        /// <summary>
+        /// This is the Event Handler for the "Tick" Event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BMISplashFormTimer_Tick(object sender, EventArgs e)
         {
             this.BMICalculatorForm.Show();

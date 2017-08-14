@@ -33,7 +33,9 @@
             this.BMISplashFormTitleLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.BMISplashFormAuthorLabel = new System.Windows.Forms.Label();
+            this.BMISplashFormPictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BMISplashFormPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // BMISplashFormTimer
@@ -64,6 +66,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.BMISplashFormTitleLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.BMISplashFormAuthorLabel, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.BMISplashFormPictureBox, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -88,6 +91,19 @@
             this.BMISplashFormAuthorLabel.Text = "Version: 1.00\r\nCopyright © DGF Professional Services";
             this.BMISplashFormAuthorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // BMISplashFormPictureBox
+            // 
+            this.BMISplashFormPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BMISplashFormPictureBox.Image = global::BMICalculator.Properties.Resources.BMICalcImage;
+            this.BMISplashFormPictureBox.Location = new System.Drawing.Point(3, 186);
+            this.BMISplashFormPictureBox.Name = "BMISplashFormPictureBox";
+            this.BMISplashFormPictureBox.Size = new System.Drawing.Size(290, 177);
+            this.BMISplashFormPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BMISplashFormPictureBox.TabIndex = 2;
+            this.BMISplashFormPictureBox.TabStop = false;
+            // 
             // BMISplashForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -101,6 +117,7 @@
             this.Text = "BMISplashForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BMISplashFormPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -111,5 +128,6 @@
         private System.Windows.Forms.Label BMISplashFormTitleLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label BMISplashFormAuthorLabel;
+        private System.Windows.Forms.PictureBox BMISplashFormPictureBox;
     }
 }
