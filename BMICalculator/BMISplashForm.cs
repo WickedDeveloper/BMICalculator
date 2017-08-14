@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator Splash Form
- * Version: 0.2 - Created BMISplashForm Timer
+ * Version: 0.3 - Refactored BMICalculatorForm Public Properties.
 */
 
 namespace BMICalculator
@@ -23,11 +23,11 @@ namespace BMICalculator
 
         // PUBLIC PROPERTIES
 
-        public BMISplashForm BMISplashForm
+        public BMICalculatorForm BMICalculatorForm
         {
             get
             {
-                return Program.bmiCalculatorForm;
+                return Program.bMICalculatorForm;
             }
         }
 

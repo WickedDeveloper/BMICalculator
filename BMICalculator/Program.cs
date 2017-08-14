@@ -8,22 +8,28 @@ using System.Windows.Forms;
  * Student #: 821304912
  * Date: August 13th, 2017
  * Description: BMI Calculator application
- * Version: 0.2 - Completed testing of BMI Calculator.
+ * Version: 0.3 - Instantiate the BMISplashForm.
 */
 
 namespace BMICalculator
 {
-    static class Program
+    public static class Program
     {
+        /// <summary>
+        /// Creates a reference to the BMI Calculator Form
+        /// </summary>
+        public static BMICalculatorForm bMICalculatorForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BMICalculatorForm());
+            bMICalculatorForm = new BMICalculatorForm();
+            Application.Run(new BMISplashForm());
         }
     }
 }
