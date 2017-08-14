@@ -18,7 +18,7 @@ namespace BMICalculator
         /// <summary>
         /// Creates a reference to the BMI Calculator Form
         /// </summary>
-        public static BMICalculatorForm bMICalculatorForm;
+        public static BMICalculatorForm BMICalculatorForm;
 
         /// <summary>
         /// The main entry point for the application.  Instantiates a BMICalculatorForm object and displays BMISplashScreen.
@@ -28,7 +28,7 @@ namespace BMICalculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            bMICalculatorForm = new BMICalculatorForm();
+            BMICalculatorForm = new BMICalculatorForm();
             Application.Run(new BMISplashForm());
         }
     }

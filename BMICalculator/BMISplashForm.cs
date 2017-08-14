@@ -27,7 +27,7 @@ namespace BMICalculator
         {
             get
             {
-                return Program.bMICalculatorForm;
+                return Program.BMICalculatorForm;
             }
         }
 
